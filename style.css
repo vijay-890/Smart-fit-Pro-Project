@@ -1,0 +1,289 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* 1. nav bar styling */
+.navbar {
+  background-color: black;
+  color: rgb(255, 136, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-links {
+  color: white;
+  margin-top: 10px;
+  word-spacing: 20px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-links a:hover {
+  background-color: #a1a1a1;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-banner {
+  background-image: url(img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 80px;
+  height: 140vh;
+}
+
+.limited-tag {
+  background-color: #f7fafc;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgb(4, 255, 188);
+}
+
+.hero-content p {
+  color: #e2e8f0;
+  text-shadow: 2px 2px 5px rgb(6, 26, 255);
+}
+
+/* 2. Specs Table Styling */
+.specs-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.specs-table {
+  width: 60%;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+}
+
+.specs-table th,
+.specs-table td {
+  border: 1px solid #e2e8f0;
+  padding: 15px;
+}
+
+.left-th,
+.right-th {
+  background-color: #060857;
+  color: whitesmoke;
+}
+
+.specs-table td {
+  background-color: #070009;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* 3. Product section */
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #050d1b;
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.img-box {
+  padding: 0px;
+  height: 200px;
+  overflow: hidden;
+  background-color: #2d3748;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box img {
+  width: 100%;
+  height: 100%px;
+  object-fit: cover;
+  display: block;
+  transition:
+    transform 1,
+    5s;
+}
+
+.img-box img:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+.card-body h4 {
+  color: #ffdd56;
+  margin-bottom: 10px;
+}
+.price {
+  color: #ff3939;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-btn {
+  background-color: #041a99;
+  color: whitesmoke;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: whitesmoke;
+  color: black;
+  font-size: large;
+  font-style: italic;
+  font-variant: initial;
+  font-weight: bold;
+}
+
+/* 4. Pre-Order Form */
+.preorder-section {
+  background: linear-gradient(#2b6cb0, #4299e1);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  width: 600px;
+  text-align: center;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container button {
+  background-color: #2d3748;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 5. Footer side style */
+.footer {
+  padding: 50px 20px;
+  background-color: #edf2f7;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sub-input {
+  display: flex;
+  margin: 15px 0;
+}
+.sub-input input {
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  width: 200px;
+}
+.sub-input button {
+  background: #2d3748;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #cbd5e0;
+  padding-top: 20px;
+  color: #718096;
+  font-size: 15px;
+  font-weight: bold;
+}
