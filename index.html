@@ -82,34 +82,34 @@
             <div class="product-wrapper">
                 <div class="card">
                     <div class="img-box">
-                        <img src="img/1.jpg" alt="Classic">
+                        <img src="img/1.jpg" alt="SmartFit Classic smartwatch">
                     </div>
                     <div class="card-body">
                         <h4>SmartFit Classic</h4>
                         <p class="price">₹2,999</p>
-                        <button class="add-btn">Add to Cart</button>
+                        <button class="add-btn">Add to cart</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="img-box">
-                        <img style="margin-bottom: 150px;" src="img/3" alt="Pro Max">
+                        <img style="margin-bottom: 150px;" src="img/3" alt="SmartFit Pro Max smartwatch">
                     </div>
                     <div class="card-body">
                         <h4>SmartFit Pro Max</h4>
                         <p class="price">₹4,499</p>
-                        <button class="add-btn">Add To Cart</button>
+                        <button class="add-btn">Add to cart</button>
                     </div>
             </div>
 
                 <div class="card">
                     <div class="img-box">
-                        <img src="img/photo-1622434641406-a158123450f9" alt="Ultra">
+                        <img src="img/photo-1622434641406-a158123450f9" alt="SmartFit Ultra G2 smartwatch">
                     </div>
                     <div class="card-body">
                         <h4>SmartFit Ultra G2</h4>
                         <p class="price">₹5,999</p>
-                        <button class="add-btn">Add To Cart</button>
+                        <button class="add-btn">Add to cart</button>
                     </div>
                 </div>
             </div>
@@ -123,11 +123,14 @@
                 <h2>Pre-Order Your SmartFit Pro</h2>
                 <p>Fill the form below and our team will contact you for the 20% discount.</p>
                 <form>
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
-                    <select>
-                        <option>Select Color: Carbon Black</option>
-                        <option>Select Color: Ocean Blue</option>
+                    <label for="preorder-name">Full name</label>
+                    <input id="preorder-name" name="name" type="text" placeholder="Full name">
+                    <label for="preorder-email">Email address</label>
+                    <input id="preorder-email" name="email" type="email" placeholder="Email address">
+                    <label for="watch-color">Color</label>
+                    <select id="watch-color" name="color">
+                        <option value="carbon-black">Carbon Black</option>
+                        <option value="ocean-blue">Ocean Blue</option>
                     </select>
                     <button type="submit">Submit inquiry</button>
                 </form>
@@ -146,7 +149,7 @@
                     <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
                     <p>Be the first to hear about new arrivals and special events.</p>
                     <div class="sub-input">
-                        <input type="email" placeholder="Email">
+                        <input type="email" aria-label="Newsletter email address" placeholder="Email address">
                         <button>Subscribe</button>
                     </div>
                     <div class="socials">
