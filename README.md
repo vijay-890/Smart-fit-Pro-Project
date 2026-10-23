@@ -2,6 +2,8 @@
 
 A static smartwatch storefront concept built with HTML and CSS.
 
+**Live demo:** [Open SmartFit Pro](https://smart-fit-pro-project.vercel.app/)
+
 ## Page sections
 
 - Product hero and navigation
